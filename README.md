@@ -1,24 +1,22 @@
 # VLESS Panel
 
-A Python FastAPI-based VLESS/XHTTP panel.
+Python/FastAPI based VLESS and XHTTP panel.
 
-## Stack
+## Project type
 
 - Python
 - FastAPI
 - Uvicorn
 - HTTPX
-- WebSocket
-- XHTTP
+- aiofiles
 
-## Entry Point
+## Entry point
 
-The application entry point is:
+`main.py` → `app`
 
-`main.py`
-
-## Run
+## Run locally
 
 ```bash
 pip install -r requirements.txt
 uvicorn main:app --host 0.0.0.0 --port 8000
+```

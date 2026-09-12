@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vless-panel"
+version = "1.0.0"
+description = "FastAPI VLESS/XHTTP panel"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "httpx",
+    "aiofiles"
+]
+
+[tool.setuptools]
+py-modules = [
+    "main",
+    "pages",
+    "relay_vless",
+    "xhttp_siz10",
+    "speed_limit",
+    "telegram_bot"
+]
